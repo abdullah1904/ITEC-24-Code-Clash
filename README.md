@@ -1,7 +1,8 @@
+<div align="center"><img src="UETCSLogo.png" width="25%"></div>
 <h1 align="center">ITEC'24 Code Clash</h1>
 <p>Had an amazing experience tackling challenging programming problems alongside <a href="https://github.com/ABDULAHAD118">Abdulahad Hussain</a> at the ITEC 2024 Code Clash! We put our problem-solving skills to the test and learned a ton. Big thanks to Software Square and the Department of Computer Science, UET Lahore for the fantastic event.</p>
 
-<hr/>
+<h2 align='center'>Problems</h2>
 <h3>Pentagonal Number:</h3>
 <p>Write a function that takes a positive integer number and calculates how many dots exist in a pentagonal shape around the center dot on the Nth iteration.<br/>
 First iteration is only a single dot. On the second, there are 6 dots. On the third, there are 16 dots and on the fourth there are 31 dots <br/>
