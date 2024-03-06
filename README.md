@@ -1,5 +1,5 @@
-<div align="center"><img src="UETCSLogo.png" width="25%"></div>
 <h1 align="center">ITEC'24 Code Clash</h1>
+<div align="center"><img src="UETCSLogo.png" width="40%"></div>
 <p>Had an amazing experience tackling challenging programming problems alongside <a href="https://github.com/ABDULAHAD118">Abdulahad Hussain</a> at the ITEC 2024 Code Clash! We put our problem-solving skills to the test and learned a ton. Big thanks to Software Square and the Department of Computer Science, UET Lahore for the fantastic event.</p>
 
 <h2 align='center'>Problems</h2>
