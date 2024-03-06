@@ -19,7 +19,7 @@ INPUT               | OUTPUT
 1                   |       
 5 //stamina         |       
 ----------------------------
-4 //size of array   |       
+4 //size of array   | 1   
 0                   |       
 1                   |       
 2.5                 |       
@@ -32,10 +32,26 @@ NOTES:
 -> The result should be integer.
 '''
 
-from typing import list
+from typing import List
+import math
 
-def getCountOfObstacles(obstacles:list[float],stamina:int)->int:
+def getCountOfObstacles(obstacles:List[float],stamina:int)->int:
     count = 0
+    for i in range(len(obstacles)-2):
+        if obstacles[i] < obstacles[i+1]:
+            staminaRequired = math.ceil(obstacles[i+1] - obstacles[i])*2
+            if stamina >= staminaRequired:
+                count += 1
+                stamina -= staminaRequired
+            else:
+                break
+        elif obstacles[i] > obstacles[i+1]:
+            staminaRequired = math.ceil(obstacles[i] - obstacles[i+1])
+            if stamina >= staminaRequired:
+                count += 1
+                stamina -= staminaRequired
+            else:
+                break
     return count
 climbingObstacles = []
 sizeOfObstacles = int(input("Enter the number of obstacles: "))
@@ -43,4 +59,4 @@ for i in range(sizeOfObstacles):
     obstacleSize = float(input("Enter the size of {} obstacle: ".format(i+1)))
     climbingObstacles.append(obstacleSize)
 stamina = int(input("Enter stamina amount: "))
-print("You can pass {} out of {} with {}".format(getCountOfObstacles(climbingObstacles,stamina),sizeOfObstacles,stamina))
+print("You can pass {} out of {} with {} stamina".format(getCountOfObstacles(climbingObstacles,stamina),sizeOfObstacles,stamina))
